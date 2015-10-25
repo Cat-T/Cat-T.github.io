@@ -19,10 +19,14 @@ body{
 	width: 200px;
 }
 
-.name p, .about-why, .contacts, .feedback {
+.name p,
+.about-why,
+.contacts,
+.feedback {
 	padding: 0px 37px 0px 49px;
 	font-size: 18px;
 	line-height: 25px;
+	margin: 0px 25px 0px 25px;
 }
 
 .feedback {
@@ -35,14 +39,17 @@ body{
 	line-height: 50px;
 	padding-top: 20px;
 }
+
 .name p {
 	border-bottom: 1px solid lightgray;
 	padding-bottom: 3px;
 }
+
 .contacts {
 	border-top: 1px solid lightgray;
-	padding-bottom: 3px
+	padding-bottom: 3px;
 }
+
 .feedback {
 	border-top: 1px solid lightgray;
 }
