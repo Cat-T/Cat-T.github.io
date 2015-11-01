@@ -1,132 +1,158 @@
 *{
-    margin: 0;
-    padding: 0;
-}
- 
-body {
-    margin: 0px 150px 0px 150px;
-    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
-}
-    
-.content {
-    font-family: Open Sans;
-}
- 
-header {
-    margin: 20px 40px 20px 40px;
+margin: 0;
+padding: 0;
 }
 
-/*MENU*/
-.menu {
-    padding: 20px 40px 20px 0px;
+body {
+    background: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    width: 966px;
+    margin: 0 auto;
+    top: 0px;
+    padding: 0px 46px 0px 48px;
+    height: 950px;
+    box-shadow: 0px 2px 5px 0.00px rgba(0, 0, 0, 0.1);
+}
+
+/*HEADER*/
+header {
+    margin: 40px 0px 40px 0px;
+    
+}
+
+header img {
+    padding-bottom: 40px;
 }
 
 .menu ul {
-    background: linear-gradient(0deg, #696767 0%, #5e5e5e 100%);
-    font-size: 0;
-    line-height: 0;
+    width: 966px;
+    height: 40px;
+    background: -webkit-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -moz-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -o-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -ms-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
 }
- 
+
+.menu ul,
+.items ul,    
+footer ul
+{
+    list-style: none;
+}
+
 .menu li {
     display: inline-block;
-    font-size: 14px;
-    width: 130px;
-    line-height: 45px;
-    letter-spacing: normal;
-    text-align: center;
+    font-size: 13px;
+    line-height: 40px;
 }
- 
-.menu li a{
-    color: white;
+
+.menu a {
+    color: #ffffff;
+    padding: 5px 40px;
+}
+
+.menu a,
+.items a,
+footer a
+{
     text-decoration: none;
 }
 
 .menu li:hover {
-    background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
+    background: -webkit-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: -moz-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: -o-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: -ms-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
+    background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%);
     border-right: 1px solid #959595;
     border-left: 1px solid #959595;
 }
 
- /*SIDEBAR*/
-.items li a,
-footer li a {
-    text-decoration: none;
-}
-
-.items ul {
-    list-style: none;
-}
-
+/*CONTENT*/
 .items {
-    float: left;
     width: 240px;
-    font-size: 14px;
-    border: 1px solid #eae8e8;
-    margin: 0px 0px 0px 40px;
+    height: 240px;
+    float: left;
+    clear: both;
 }
 
-.items a{
+.items li {
+    border: 1px solid lightgrey;
+    height: 39px;    
+}
+
+.items a {
+    color: #656363;
     display: block;
-    border-bottom: 1px solid #eae8e8;
-    color: black;
-    width: 225px;
-    height: 30px;
-    padding: 10px 2px 2px 15px;
-    text-align: left;
+    padding: 10px 20px;
+    font-size: 13px;
 }
 
 .items a:hover{
     background-color: #f5f5f5;
+    display: block;
+    padding: 10px 40px;
+    color: #2c2b2b;
 }
 
-/*IMAGE+TEXT*/
+
 .image {
+    width: 678px;
+    height: 400px;
     float: right;
-    width: 52%;
-    border: 1px solid #eae8e8;
-    margin: 0px 78px 10px 10px;
+    border: 1px solid lightgrey;
     text-align: center;
+}
+
+.image img {
+    width: 500px;
+    height: 307px;
+    
 }
 
 .text {
-    clear: both;
-}
-
-p {
-    padding: 30px 75px 30px 510px;
-    text-align: justify;
-    font-family: OpenSans;
+    width: 655px;
+    height: 141px;
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 13px;
 }
 
 /*FOOTER*/
-footer li {
-    display: inline-block;
-    font-size: 12px;
-    width: 130px;
-    line-height: 45px;
-    letter-spacing: normal;
-    text-align: center;
-}
-
-footer a{
-        color: #2c2b2b;
-}
-
 footer {
-    padding: 20px 65px 20px 40px; 
+    width: 966px;
+    height: 40px;
+    clear: both;
+    background: linear-gradient(0deg, #e1e1e1 0%, #e1e1e1 100%);
 }
 
 footer ul {
-    font-size: 0;
-    line-height: 0;
-    background: linear-gradient(0deg, #e2e2e2 0%, #ddd8d8 100%);
+    float: left;
 }
-    
-footer a:hover{
-    border-bottom: 1px solid #313030;
+
+footer li {
+    display: inline-block;
 }
 
 .copy {
-    width: 565px;
-    text-align: right;
+    float: right;
+}
+
+footer a,
+.copy
+{
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    display: block;
+    color: #2c2c2c;
+    padding: 5px 40px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
