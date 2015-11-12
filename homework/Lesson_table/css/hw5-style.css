@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0f0f0f;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.one_one {
+    height: 47px;
+    width: 117px;
+    background: #fff;
+}
+
+.one_two {
+    height: 47px;
+    width: 10px;
+    background: black;
+}
+.one_three {
+    height: 47px;
+    width: 200px;
+    background: #fff;
+}
+
+.one_four{
+    height: 502px;
+    width: 10px;
+    background: black;
+}
+
+.one_five {
+    height: 47px;
+    width: 163px;
+    background: url(../img/yelow1-5.png);
+    background-size: cover;
+}
+
+.two_one {
+    height: 10px;
+    width: 500px;
+}
+
+.three_one {
+    height: 130px;
+    width: 46px;
+    background: #fff;
+}
+
+.three_two {
+    height: 483px;
+    width: 10px;
+    background: black;
+}
+
+.three_three {
+    height: 259px;
+    width: 271px;
+    background: url(../img/red.png);
+    background-size: cover;
+}
+
+.three_five {
+    height: 128px;
+    width: 163px;
+    background: url(../img/yelow3-5.png);
+    background-size: cover;
+}
+
+.four_one {
+    height: 10px;
+    width: 46px;
+    background: black;
+}
+
+.four_three {
+    height: 10px;
+    width: 163px;
+    background: black;
+}
+
+.five_one {
+    height: 190px;
+    width: 46px;
+    background: #fff;
+}
+
+.five_two {
+    height: 117px;
+    width: 77px;
+    background: #fff;
+}
+
+.five_three {
+    height: 117px;
+    width: 10px;
+    background: black;
+}
+
+.five_four {
+    height: 127px;
+    width: 76px;
+    background: #fff;
+}
+
+.six_one {
+    height: 10px;
+    background: black;
+    width: 271px;
+}
+
+.six_two {
+    height: 10px;
+    background: black;
+    width: 163px;
+}
+
+.seven_one {
+    height: 60px;
+    width: 60px;
+    background: url(../img/black7-1.png);
+    background-size: cover;
+}
+
+.seven_four {
+    height: 204px;
+    width: 10px;
+    background: black;
+}
+
+.seven_five{
+    height: 60px;
+    width: 141px;
+    background: #fff;
+}
+
+.seven_seven {
+    height: 60px;
+    width: 163px;
+    background: #fff;
+}
+
+.nine-one {
+    height: 133px;
+    width: 46px;
+    background: url(../img/yelow9-1.png);
+    background-size: cover;
+}
+
+.nine_five {
+    height: 100px;
+    width: 163px;
+    background: url(../img/blue.png);
+    background-size: cover;
+}
+
+.ten_one {
+    height: 10px;
+    width: 130px;
+    background: black;
+}
+
+.ten_two {
+    height: 10px;
+    width: 141px;
+    background: black;
+}
+
+.eleven_one {
+    height: 64px;
+    width: 130px;
+    background: #fff;
+}
+
+.eleven_two {
+    width: 141px;
+    height: 26px;
+    background: url(../img/black11-2.png);
+    background-size: cover;
+}
+
+.tw_one{
+    height: 10px;
+    width: 304px;
+    background: black;
+}
+.th_one {
+    height: 28px;
+    width: 304px;
+    background: #fff;
+}

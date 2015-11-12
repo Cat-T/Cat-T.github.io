@@ -5,34 +5,33 @@
 
 body {
     background: url(../img/background1.png);
-    background-size: auto 1060px;
+    background-size: contain;
     font-family: Tahoma, sans-serif;
-    height: 100%;
 }
 
 .wrapper {
     margin: 0 auto;
-    width: 1018px;
-    background: url(../img/white_main.png);
+    width: 1000px;
+    background: #fff;
     position: relative;
 }
 
 /*HEADER*/
 header {
     width: 1018px;
-    height: 187px;
 }
 
 header .logo {
-    position: absolute;
-    left: 20px;
-    top: 20px;
+    float: left;
+    width: 283px;
+    padding: 12px 20px 25px 20px;
 }
 
 header .contacts {
-    position: absolute;
-    right: 35px;
-    top: 20px;
+    float: left;
+    width: 645px;
+    padding-top: 10px;
+    text-align: right;
     color: rgba(18, 138, 167, 0.8);
 }
 
@@ -45,21 +44,25 @@ header .contacts li {
     line-height: 20px;
 }
 
-/*COUNTRIES*/
+/*CONTRIES*/
 header .contries {
-    position: absolute;
-    top: 110px;
-    right: 20px;
+    float: left;
+    clear: right;
+    padding-left: 240px;
+    padding-top: 20px;
     font-weight: 400;
 }
 
 header .contries ul {
     list-style: none;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: 0;
 }
 
 header .contries li {
     display: inline-block;
-    padding: 5px 5px;
+    padding: 0px 5px;
     line-height: 15px;
 }
 
@@ -75,6 +78,10 @@ header .contries li a span {
     width: 55px;
 }
 
+header .contries li a:hover {
+    text-decoration: none;
+}
+
 .clearfix:after {
     content: '';
     clear: both;
@@ -84,23 +91,16 @@ header .contries li a span {
 }
 
 /*IMAGE*/
-.container {
-    height: 263px;
-    position: relative;
-}
-
 .container img {
     position: absolute;
-    right: 9px;
-    top: -6px;
+    top: 177px;
 }
 
 /*MENU*/
 .menu {
     position: absolute;
-    top: 420px;
+    top: 415px;
     width: 1000px;
-    left: 9px;
     border-bottom: 1px solid #000;
     background: rgb(55,55,55); /* Old browsers */
     background: -webkit-linear-gradient(rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
@@ -160,7 +160,7 @@ header .contries li a span {
 
 /*COLUMNS*/
 .columns {
-    padding-left: 10px;
+    padding-top: 240px;
     width: 1000px;
     height: 100%;
     overflow: hidden;
