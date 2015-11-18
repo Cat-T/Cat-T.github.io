@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+.clearfix:after, .clearfix:before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 body {
     background: url(../img/background1.png);
     background-size: contain;
@@ -13,25 +19,24 @@ body {
     margin: 0 auto;
     width: 1000px;
     background: #fff;
-    position: relative;
 }
 
 /*HEADER*/
 header {
-    width: 1018px;
+    width: 1000px;
 }
 
 header .logo {
     float: left;
     width: 283px;
-    padding: 12px 20px 25px 20px;
+    padding: 10px 20px 0px 20px;
+    height: 168px;
 }
 
 header .contacts {
     float: left;
-    width: 645px;
     padding-top: 10px;
-    text-align: right;
+    padding-right: 15px;
     color: rgba(18, 138, 167, 0.8);
 }
 
@@ -46,8 +51,7 @@ header .contacts li {
 
 /*CONTRIES*/
 header .contries {
-    float: left;
-    clear: right;
+    float: right;
     padding-left: 240px;
     padding-top: 20px;
     font-weight: 400;
@@ -82,24 +86,15 @@ header .contries li a:hover {
     text-decoration: none;
 }
 
-.clearfix:after {
-    content: '';
-    clear: both;
-    display: block;
-    width: 100%;
-    height: 0px;
-}
-
 /*IMAGE*/
-.container img {
-    position: absolute;
-    top: 177px;
+.container {
+    height: 240px;
 }
 
 /*MENU*/
 .menu {
     position: absolute;
-    top: 415px;
+    top: 417px;
     width: 1000px;
     border-bottom: 1px solid #000;
     background: rgb(55,55,55); /* Old browsers */
@@ -109,12 +104,12 @@ header .contries li a:hover {
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 
-.menu li{
+.menu ul li{
     position: relative;
     float: left;
     list-style: none;
 }
-.menu li a{
+.menu ul li a{
     position: relative;
     padding: 0 33px;
     display: block;
@@ -124,7 +119,7 @@ header .contries li a:hover {
     font-size: 14px;
 }
 
-.menu ul+a:after{
+.menu ul ul+a:after{
     content: '';
     display: block;
     position: absolute;
@@ -136,7 +131,7 @@ header .contries li a:hover {
     background: url(../img/triangle.png) 0 0 no-repeat;
 }
 
-.menu ul{
+.menu ul ul{
     position: absolute;
     left: 25px;
     visibility: hidden;
@@ -145,7 +140,7 @@ header .contries li a:hover {
     transition: all 0.5s;
 }
 
-.menu li:hover ul{
+.menu ul li:hover ul{
     visibility: visible;
     opacity: 1;
     top: 100%;
@@ -154,14 +149,13 @@ header .contries li a:hover {
 .menu ul li{
     background: #303030;
 }
-.menu ul a{
+.menu ul ul a{
     padding: 0 10px;
 }
 
 /*COLUMNS*/
 .columns {
-    padding-top: 240px;
-    width: 1000px;
+    padding-top: 27px;
     height: 100%;
     overflow: hidden;
     text-align: center;
@@ -205,9 +199,8 @@ header .contries li a:hover {
 
 /*FOOTER*/
 footer {
-    font: 400 12px Tahoma;
+    font: 400 12px Tahoma, sans-serif;
     color: rgba(255, 255, 255, 0.8);
-    position: relative;
     text-align: center;
     line-height: 30px;
 }
