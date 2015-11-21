@@ -23,20 +23,20 @@ body {
 
 /*HEADER*/
 header {
-    width: 1000px;
+    width: 960px;
+		padding: 0px 20px;
 }
 
 header .logo {
     float: left;
     width: 283px;
-    padding: 10px 20px 0px 20px;
+    padding-top: 9px;
     height: 168px;
 }
 
 header .contacts {
-    float: left;
+    float: right;
     padding-top: 10px;
-    padding-right: 15px;
     color: rgba(18, 138, 167, 0.8);
 }
 
