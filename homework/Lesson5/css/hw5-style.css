@@ -37,7 +37,8 @@ header {
 }
 
 ul {
-    float:right;
+    float:left;
+    padding-left: 844px;
 }
 
 li{
@@ -46,7 +47,7 @@ li{
 }
 
 
-a {
+ul a {
     display: block;
     padding-left: 10px;
     padding-right: 9px;
@@ -61,7 +62,10 @@ a:hover {
 }
 
 .suggest a{
+    float: left;
+    margin-top: 9px;
     color: #fefefe;
+    text-decoration: none;
 }
 
 .suggest:before {
@@ -69,7 +73,7 @@ a:hover {
     position: absolute;
     top: 2px;
     bottom: 3px;
-    right: 342px;
+    right: 353px;
     width: 1px;
     height: 31px;
     background: #60b5ed;
@@ -77,20 +81,28 @@ a:hover {
 
 .suggest img {
     float: left;
-    margin-top: 6px;
     margin-right: 10px;
 }
 
 header .greet {
+    float: left;
+    height: 27px;
+    width: 193px;
+    margin-left: 20px;
+    padding-top: 9px;
     color: #feffff;
+    text-align: center;
     background: url(../img/Layer-16.png);
-    padding-left: 10px;
 }
 
 .greet a {
     display: inline-block;
     text-decoration: underline;
     color: #feffff;
+}
+
+.suggest a img {
+    padding-left: 49px;
 }
 
 .greet a:hover,
@@ -109,7 +121,7 @@ header .greet {
 }
 
 /*BLACK FORM*/
-.form_cadaster {
+.form_cadastre {
     position: absolute;
     top: 30%;
     left: 35%;
@@ -123,7 +135,7 @@ header .greet {
     background: url(../img/Layer-2-copy.png);
 }
 
-.cadaster {
+.cadastre {
     font-size: 24px;
     color: #fff;
     line-height: 24px;
@@ -132,20 +144,21 @@ header .greet {
 }
 
 .facebook {
-    padding-top: 10px;
+    padding-top: 25px;
     padding-bottom: 30px;
 }
 
 .facebook img {
     float: left;
-    margin-left: -10px;
 }
 
 .facebook a{
     display: block;
     height: 35px;
-    width: 258px;
+    width: 276px;
     margin-left: 142px;
+    text-decoration: none;
+    letter-spacing: 1px;
     color: #f9feff;
     border-top: 2px solid #7788b4;
     border-radius: 3px;
@@ -167,7 +180,7 @@ span .log_in {
     float: right;
     margin-top: 10px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 16px;
     height: 11px;
     width: 8px;
     background: url(../img/arrow.png) 0 0 no-repeat;
@@ -178,7 +191,7 @@ span .log_in {
     display: block;
     position: absolute;
     left: 142px;
-    top: 161px;
+    top: 173px;
     height: 1px;
     width: 123px;
     background: #666;
@@ -190,7 +203,7 @@ span .log_in {
     display: block;
     position: absolute;
     right: 142px;
-    top: 161px;
+    top: 173px;
     height: 1px;
     width: 123px;
     background: #666;
@@ -212,13 +225,13 @@ span .log_in {
 
 .form_line {
     vertical-align: middle;
-    padding-top: 19px;
+    padding-top: 20px;
     text-align: center;
 }
 
 .form_line input {
     height: 35px;
-    width: 266px;
+    width: 257px;
     background: black;
     border: #000;
     border-bottom: 1px solid grey;
@@ -231,8 +244,8 @@ span .log_in {
 .checkbox {
     width: 276px;
     vertical-align: middle;
-    padding-top: 19px;
-    padding-left: 120px;
+    padding-top: 13px;
+    padding-left: 117px;
     text-align: center;
 }
 
@@ -250,7 +263,7 @@ span .log_in {
 }
 
 .submit {
-    padding-top: 32px;
+    padding-top: 20px;
     padding-left: 205px;
 }
 
