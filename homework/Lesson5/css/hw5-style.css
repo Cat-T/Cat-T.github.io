@@ -18,6 +18,11 @@ body {
     background: #282828;
 }
 
+.wrapper {
+    background: url(../img/bikes.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
 /*HEADER*/
 header {
     background: url(../img/Background1-copy.png);
@@ -33,29 +38,26 @@ header {
 
 ul {
     float:right;
-    line-height: 36px;
 }
 
 li{
-    float: left;
-    padding-right: 15px;
-    padding-left: 15px;
+    display: inline-block;
     list-style: none;
 }
 
 
 a {
     display: block;
+    padding-left: 10px;
+    padding-right: 9px;
+    line-height: 36px;
     text-decoration: none;
     color: #60b5ed;
 }
 
-li:hover {
-    background: #60b5ed;
-}
-
 a:hover {
     color: #fff;
+    background: #60b5ed;
 }
 
 .suggest a{
@@ -82,6 +84,7 @@ a:hover {
 header .greet {
     color: #feffff;
     background: url(../img/Layer-16.png);
+    padding-left: 10px;
 }
 
 .greet a {
@@ -91,20 +94,22 @@ header .greet {
 }
 
 .greet a:hover,
-.suggest:hover {
+.suggest a:hover {
     background: none;
     text-decoration: none;
+}
+
+.suggest a:hover {
+    color: dodgerblue;
 }
 
 .container {
     width: 1215px;
     height: 1028px;
-    margin: 0 auto;
-    background: url(../img/bikes.png) no-repeat center center;
 }
 
 /*BLACK FORM*/
-.wrapper {
+.form_cadaster {
     position: absolute;
     top: 30%;
     left: 35%;
@@ -114,6 +119,7 @@ header .greet {
     color: #ccc;
     font-size: 14px;
     font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
+    font-weight: bold;
     background: url(../img/Layer-2-copy.png);
 }
 
@@ -132,12 +138,13 @@ header .greet {
 
 .facebook img {
     float: left;
+    margin-left: -10px;
 }
 
 .facebook a{
     display: block;
     height: 35px;
-    width: 276px;
+    width: 258px;
     margin-left: 142px;
     color: #f9feff;
     border-top: 2px solid #7788b4;
@@ -194,10 +201,9 @@ span .log_in {
     color: #ccc;
     font-size: 14px;
     font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
-    padding-left: 18px;
 }
  
-.form_line input:hover {
+.form_line input:focus {
     background: #1b5288;
     border: 1px solid rgba (95, 133, 169, 0.8);
     border-bottom: 1px solid #5f85a9;
@@ -212,10 +218,14 @@ span .log_in {
 
 .form_line input {
     height: 35px;
-    width: 276px;
-    background: #000;
+    width: 266px;
+    background: black;
     border: #000;
     border-bottom: 1px solid grey;
+    font-size: 14px;
+    color: #ccc;
+    font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
+    padding-left: 18px;
 }
 
 .checkbox {
@@ -235,13 +245,12 @@ span .log_in {
     height: 35px;
     width: 151px;
     color: #fff;
-    /*text-align: center;*/
     border-radius: 3px;
     background: linear-gradient(to top, #2e7ac4, #50aedb); 
 }
 
 .submit {
-    padding-top: 19px;
+    padding-top: 32px;
     padding-left: 205px;
 }
 
@@ -252,7 +261,7 @@ p {
 .low {
     width: 309px;
     height: 28px;
-    padding-top: 19px;
+    padding-top: 20px;
     padding-left: 123px;
     line-height: 16px;
     color: #ccc;
