@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -14,95 +14,82 @@
     font-style: normal;
 }
 
-body {
-    background: #282828;
-}
-
 .wrapper {
+    position: relative;
     background: url(../img/bikes.png) 100% 100% no-repeat;
     background-size: cover;
 }
 
 /*HEADER*/
 header {
-    background: url(../img/Background1-copy.png);
-}
-
-.menu {
-    float: right;
     width: 100%;
     height: 36px;
+    background: #074f8f;
     font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
-    font-size: 14px;
 }
 
-ul {
-    float:left;
-    padding-left: 782px;
+.menu_left {
 }
 
-li{
-    display: inline-block;
+.menu_left li{
     list-style: none;
+    float: right;
 }
 
 
-ul a {
-    display: block;
-    padding-left: 10px;
-    padding-right: 9px;
+.menu_left a {
     line-height: 36px;
+    font-size: 14px;
+    font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
+    padding: 10px 15px;
     text-decoration: none;
     color: #60b5ed;
 }
 
-a:hover {
+.menu_left a:hover {
     color: #fff;
     background: #60b5ed;
 }
 
+.suggest {
+    float: right;
+    margin: 3px;
+    width: 150px;
+    text-align: right;
+    padding: 0px 8px 0px 2px;
+    line-height: 31px;
+    height: 28px;
+    border-left: 1px solid #60b5ed;
+}
+
 .suggest a{
-    float: left;
     margin-top: 9px;
+    font-size: 14px;
     color: #fefefe;
     text-decoration: none;
 }
 
-.suggest:before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    bottom: 3px;
-    right: 353px;
-    width: 1px;
-    height: 31px;
-    background: #60b5ed;
-}
-
 .suggest img {
     float: left;
-    margin-right: 10px;
+    padding-left: 20px;
+    padding-top: 3px;
 }
 
 header .greet {
-    float: left;
-    height: 27px;
-    width: 193px;
-    margin-left: 20px;
-    padding-top: 9px;
+    float: right;
     color: #feffff;
-    text-align: center;
     background: url(../img/Layer-16.png);
+    margin-right: 20px;
+    padding-top: 9px;
+    width: 193px;
+    height: 27px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .greet a {
-    display: inline-block;
     text-decoration: underline;
     color: #feffff;
-}
-
-.suggest a img {
-    padding-left: 49px;
 }
 
 .greet a:hover,
