@@ -110,9 +110,9 @@ header .greet {
 /*BLACK FORM*/
 .form_cadastre {
     position: absolute;
-    top: 30%;
-    left: 35%;
-    margin-bottom: 5%;
+    top: 50%;
+    left: 50%;
+		transform: translate(-50%, -50%);
     width: 560px;
     height: 614px;
     color: #ccc;
