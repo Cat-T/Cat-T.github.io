@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+</head>
+<body>
+		
+		<script type="text/template" id="resume">
+			<div class="content">
+				<div class="name">
+					<h1><%= myName %></h1>
+					<img src="<%= image %>" alt="My photo" id="picture">
+					<p><%= status %></p>
+				</div>
+
+				<div class="about-why">
+					<p><%= aboutMe %><p>
+					<ul>
+					<% for (var i = 0; i < about.length; i++) { %>
+						<li><%= about[i] %></li>
+					<%	} %>
+					</ul>
+				</div>
+
+				<div class="contacts">
+					<p><%= phoneTitle %></p>
+					<p><%= phoneNumber %></p>
+					<p><%= contactFacebook %></p>
+					<a href="<%= facebookUrl %>"><%= facebookLink %></a>
+				</div>
+
+				<div class="feedback">
+					<p><%= feedback %></p>
+					<p><%= email %></p>
+				</div>
+			</div>
+		</script>
+	<div id="addResume">
+	</div>
+		<script src="js/script.js"></script>
+</body>
+</html>

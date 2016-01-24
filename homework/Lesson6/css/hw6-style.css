@@ -11,6 +11,7 @@ body {
 /*HEADER*/
 header {
 	height: 38px;
+	position: relative;
 }
 
 header .phone{
@@ -27,7 +28,7 @@ header .phone:before {
 	width: 23px;
 	height: 21px;
 	position: absolute;
-	left: 311px;
+	left: 7px;
 	top: 7px;
 	background: url(../img/phone.png) no-repeat;
 }
@@ -55,7 +56,7 @@ header form:before {
 	width: 14px;
 	position: absolute;
 	top: 7px;
-	left: 626px;
+	left: 322px;
 	background: url(../img/autoriz.png) no-repeat;
 }
 
@@ -98,8 +99,8 @@ header div {
 	height: 10px;
 	background: #fff;
 	position: absolute;
-	top: 8px;
-	right: 347px;
+	top: 10px;
+	right: 294px;
 }
 
 .forgot_pass a{
@@ -149,12 +150,14 @@ header div {
 
 .menu ul {
 	float: left;
-	line-height: 37px;
+	display: block;
+	line-height: 33px;
 	padding-left: 146px;
 }
 .menu ul li {
 	display: inline-block;
-	padding-right: 22px;
+	padding: 0 11px;
+	height: 32px;
 	/*margin-left: -88px;*/
 }
 .menu .about a {
@@ -170,12 +173,15 @@ header div {
 	float: left;
 }
 
+.about li:hover {
+	background: linear-gradient(to top, #0e385d, #1f6585);
+	border-radius: 16px;
+}
+
 .about a:hover {
 	color: #fff;
-	background: linear-gradient(to top, #0e385d, #1f6585);
-	border-radius: 8px;
-	
 }
+
 .menu .bucket {
 	margin-left: 74px;
 	padding-right: 13px;
@@ -262,6 +268,13 @@ header div {
 	color: #77858b;
 	display: block;
 	line-height: 8px;
+}
+
+.search_avto_tires .year_made,
+.search_avto_disc .year_made  {
+	width: 63px;
+	float: left;
+	margin-left: 19px;
 }
 
 .search_avto select {
