@@ -61,10 +61,10 @@ header form:before {
 }
 
 .ent input {
-	width: 108px;
+	width: 105px;
 	height: 10px;
 	margin-top: 3px;
-	margin-left: 6px;
+	margin-left: 4px;
 }
 
 header .enter {
@@ -100,7 +100,7 @@ header div {
 	background: #fff;
 	position: absolute;
 	top: 10px;
-	right: 299px;
+	right: 296px;
 }
 
 .forgot_pass a{
