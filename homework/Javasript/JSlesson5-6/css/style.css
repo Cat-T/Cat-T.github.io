@@ -1,0 +1,42 @@
+.wrapper {
+  margin: auto;
+  margin-top: 150px;
+  width: 1200px;
+  text-align: center;
+}
+
+.timer >div, .timer span {
+  display:inline-block;
+  font: 900 280px / 280px Arial, Tahoma, sans-serif;
+ }
+ 
+.timer .msec {
+  display:block;
+  font: 900 65px / 60px Arial, Tahoma, sans-serif;
+  text-align: right;
+  padding-right: 55px
+  }
+
+ .timer {
+ 	background-color: #e1e3ff;
+    border: 12px solid black;
+    border-radius: 40px;
+    margin-bottom: 40px;
+ }
+
+button {
+	font: 900 100px / 100px Arial, Tahoma, sans-serif;
+	background-color: #870f0f;
+	border: 15px solid black;
+    border-radius: 73px;
+    width: 30%;
+ }
+
+button:hover {
+	cursor: pointer;
+}
+
+ #toggle {
+ 	margin-right: 30%;
+ 	background-color: #129412;
+ }
