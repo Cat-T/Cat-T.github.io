@@ -1,0 +1,350 @@
+* { 
+  margin: 0 ;
+  padding: 0;
+}
+
+body {
+  background: #557393; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #557393 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #557393 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #557393 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#557393', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 1280px;
+  border: 0;
+  padding-bottom: 100px;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 -12px 10px 5px rgba(0,0,0,0.8);
+}
+
+.jcarousel-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+}
+
+.jcarousel-wrapper h1 {
+  margin: 0 auto;
+  padding: 15px;
+  color: #fff;
+}
+
+.jcarousel-wrapper p:first-of-type {
+  padding: 10px;
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  border: 12px solid rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+
+  /* Optional, required in this case since it's a <ul> element */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+  /* Required only for block elements like <li>'s */
+  float: left;
+
+  line-height: 0;
+}
+
+.jcarousel li img {
+  width: 1024px;
+  height: 768px;
+}
+.jcarousel-control-next,
+.jcarousel-control-prev {
+  font-size: 500px;
+  line-height: 768px;
+  position: absolute;
+  top: center;
+  text-decoration: none;
+  color: rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+.jcarousel-control-next:hover,
+.jcarousel-control-prev:hover {
+  color: rgba(0,0,0,0.8);
+  text-shadow: 0 0 5px rgba(0,128,200,0.8)
+}
+
+.jcarousel-control-next:active,
+.jcarousel-control-prev:active {
+  color: rgba(50,0,0,0.8);
+  text-shadow: 0 0 5px rgba(50,0,0,0.8);
+}
+
+.jcarousel-control-prev {
+  left: 0;
+}
+
+.jcarousel-control-next {
+  right: 0;
+}
+
+.jcarousel-pagination {
+  margin: 1em auto;
+  width: 400px;
+}
+
+.jc-pagination-link {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0,0,0,0);
+  border-radius: 50%;
+  background: rgba(0,0,0,0.4);
+}
+
+.jc-pagination-link:hover {
+  color: rgba(0,0,0,0.8);
+  text-shadow: 0 0 5px rgba(0,128,200,0.8);
+  border: 3px solid rgba(0,128,200,0.8);
+  box-shadow: 0 0 5px 3px rgba(0,128,200,0.8);
+  background-color: rgba(0,128,200,1);
+}
+
+.jc-pagination-link:active {
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 0 3px rgba(50,0,0,0.8);
+  border: 3px solid rgba(255,80,80,0.8);
+  box-shadow: 0 0 5px  3px rgba(255,0,0,0.8);
+  background-color: rgba(50,0,0,1);
+}
+
+.jc-pagination-link.active {
+  cursor: default;
+  color: rgba(0,0,0,1); 
+  background-color: rgba(255,255,255,1); 
+  border: 3px solid rgba(0,0,0,0.2);
+}
+
+/* fancy select */
+.fancySelect-wrapper {
+  width: 50px;
+  margin: 0 ;
+  padding: 40px;
+}
+
+/* checkboxes */
+.checkboxes-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.jqCheckbox-wrapper,
+.cssCheckbox-wrapper {
+  float: left;
+  padding: 20px;
+  margin: 20px;
+}
+
+.jqCheckbox-wrapper {
+  background-color: rgb(255,100,100);
+}
+
+.cssCheckbox-wrapper {
+  background-color: rgb(255,100,100);  
+}
+
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url('../img/checkbox-2.png');
+  overflow: hidden;
+}
+
+.niceChecked {
+  background-position: 0 -17px;
+}
+
+.niceCheck input {
+  margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+
+.niceCheckDisabled {
+  background-image: url('../img/checkbox-2.png');
+}
+
+.cssCheckbox-wrapper input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.cssCheckbox-wrapper label {
+  cursor: pointer;
+}
+
+.cssCheckbox-wrapper label:before {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url('../img/checkbox-2.png');
+  position: relative;
+  top: 3px;
+  margin-right: 0.5em;
+}
+
+.cssCheckbox-wrapper input[type=checkbox]:checked + label:before {
+  background-position: 0 -17px;
+}
+
+.cssCheckbox-wrapper label:hover:before {
+  background-position: 0 -34px;
+}
+
+.cssCheckbox-wrapper input[type=checkbox]:checked + label:hover:before {
+  background-position: 0 -51px;
+}
+
+
+.cssCheckbox-wrapper input[type=checkbox][disabled] + label:before {
+  background-position: 0 -68px;
+}
+
+.cssCheckbox-wrapper input[type=checkbox][disabled]:checked + label:before {
+  background-position: 0 -86px;
+}
+
+
+/* nav menu */
+
+nav {
+  background-color:rgb(255,100,100);
+  padding:10px 0;
+  position: relative;
+  z-index: 9999;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {    
+    background-color:rgb(225,75,75);
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
