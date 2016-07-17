@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson23-24</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dist/css/css-built.css">
+</head>
+<body>
+<script type="text/template" id="wrapper-template">
+	<div class="wrapper">
+		<h1 class="title">ToDo List</h1>
+		<div class="data__controls">
+			<input type="text" class="data__value" placeholder="What should be done today?" autofocus>
+		</div>
+		<ul class="data__list"></ul>
+	</div>
+</script>
+
+<script type="text/template" id="list-template">
+	<% [].forEach.call(data, function(value) {%>
+	<li class="data__i" >
+		<%= value %> <span data-value="<%= value %>" class="fa fa-times-circle data__delete"></span><span data-value="<%= value %>" class="fa fa-pencil data__edit"></span>
+	</li>
+	<% }); %>
+	<div class="data__result">Total notes: <span class="data__counter">0</span></div>
+</script>
+<script type="text/javascript" src="dist/js/app-built.js"></script>
+</body>
+</html>
